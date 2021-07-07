@@ -214,11 +214,11 @@ resulting in,
 \begin{align}
     \myvec{\vec{x} \\ \boldsymbol{\lambda}} &= \myvec{0 & 0 & 2 & 2 \\ 0 & 0 & 1 & 3 \\ 2 & 1 & 0 & 0 \\ 2 & 3 & 0 & 0}^{-1}\myvec{-7.5 \\ -5 \\ 60 \\ 120}
     \\
-    \implies   \myvec{\vec{x} \\ \boldsymbol{\lambda}} &= \myvec{0 & 0 & \frac{3}{4} & \frac{-1}{4} \\ 0 & 0 & \frac{-1}{2} & \frac{1}{2} \\ \frac{3}{4} & \frac{-1}{2} & 0 & 0 \\ \frac{1}{4} & \frac{1}{2} & 0 & 0}\myvec{-7.5 \\ -5 \\ 60 \\ 120}
+    \implies   \myvec{\vec{x} \\ \boldsymbol{\lambda}} &= \myvec{0 & 0 & \frac{3}{4} & \frac{-1}{4} \\ 0 & 0 & \frac{-1}{2} & \frac{1}{2} \\ \frac{3}{4} & \frac{-1}{2} & 0 & 0 \\ \frac{-1}{4} & \frac{1}{2} & 0 & 0}\myvec{-7.5 \\ -5 \\ 60 \\ 120}
     \\
-    \implies \myvec{\vec{x} \\ \boldsymbol{\lambda}} &= \myvec{15 \\ 30 \\ -3.12 \\ -0.62}
+    \implies \myvec{\vec{x} \\ \boldsymbol{\lambda}} &= \myvec{15 \\ 30 \\ -3.125 \\ -0.625}
 \end{align}
-$\because \boldsymbol{\lambda}=\myvec{-3.12 \\ -0.62} \succ \vec{0} $
+$\because \boldsymbol{\lambda}=\myvec{-3.125 \\ -0.625} \succ \vec{0} $
 \\
 $\therefore$ Optimal solution is given by
 \begin{align}
@@ -232,7 +232,7 @@ By using cvxpy in python ,
     \vec{x}=\myvec{14.99999998\\29.99999996}\\
     Z = 262.49999967
 \end{align}
-Hence, the manufacturer should manufacture \boxed{x=15} toys of type A and \boxed{y=30} toys of type B in a day to get maximum profit \boxed{Z=262.5}.
+Hence, the manufacturer should manufacture \boxed{x=15} toys of type A and \boxed{y=30} toys of type B in a day to get maximum profit \boxed{Z=\text{Rs} 262.5}.
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
 \centering
